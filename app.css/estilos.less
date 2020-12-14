@@ -1,0 +1,880 @@
+@castanho : #7f541f;
+@cinza-escuro: #7f7f7f;
+
+@media screen and (min-width: 320px){
+	@font-face{
+		font-family: 'GreatVibes';
+		src: url('../app.fonts/GreatVibes.ttf');
+	}
+
+	@font-face{
+		font-family: 'Foglihten';
+		src: url('../app.fonts/FoglihtenNo07.otf');
+	}
+
+	div{
+		box-sizing: border-box;
+	}
+
+	body{
+		max-width: 100%;
+	}
+
+	footer,
+	header{
+		margin: 0 auto;
+		transition: height 0.3s;
+		border-radius: 20px;
+		padding: 20px;
+		width: 95%;
+
+	}
+	header{
+		border-bottom: 2px solid darken(@castanho, 10%);
+	}
+
+	footer{
+		.page-title{
+			font-size: 20px;
+		}
+		clear: both;
+		border-top: 2px solid darken(@castanho, 10%);
+	}
+
+	figure{
+		display: inline-block;
+		text-align: center;
+		margin: 0 auto;
+		img{
+			max-height: 220px;
+		}
+	}
+
+	figcaption{
+		position: relative;
+		top: -5px;
+		font-size: 13px;
+		background-color: @castanho;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		padding: 5px;
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+	img{
+		max-width: 90%;
+		padding: 5px;
+		background-color: @castanho;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+
+	h3,
+	h2{
+		color: @castanho;
+		font-weight: bold;
+		font-family: 'Foglihten';
+	}
+	h2{
+		font-size: 25px;
+		border-bottom: 1px solid @castanho;
+		border-radius: 20px;
+		text-align: center;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+	p{
+		padding: 10px;
+		text-indent: 15px;
+		margin: 5px;
+		text-align: justify;
+	}
+
+	label{
+		font-size: 17px;
+		font-family: Arial;
+	}
+	p,
+	figcaption{
+		font-size: 15px;
+		font-family: Arial;
+	}
+	figcaption{
+		color: white;
+	}
+	
+	article{
+		margin: 10px 0;
+		padding: 10px 0px;
+		position: relative;
+		border-bottom: 1px solid @castanho;
+		//border-top: 1px solid @castanho;
+		border-radius: 20px;
+	}
+
+	iframe{
+		max-width: 90%;
+		max-height: 100%;
+		border-radius: 20px;
+		margin: 10px auto;
+	}
+
+	aside{
+		text-align: center;
+	}
+
+	.hide{
+		display: none;
+	}
+
+	.destaque{
+		margin: 10px 0;
+		section{
+			text-align: center;
+			ul{
+				padding-top: 10px;
+			}
+			li{
+				padding: 5px;
+				font-size: 10px;
+				&:after,
+				&:before{
+					color: @castanho;
+					padding: 3px;
+					padding-left: 5px;
+					content: '\2605';
+				}
+			}
+		}	
+	}
+
+	.home-panel{
+		width: 90%;
+		height: 400px;
+		margin: 10px auto;
+		background-image: url("../app.img/homepage1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 15px;
+		border: 3px solid @castanho;
+		text-align: center;
+		ul{		
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			li{
+				height: 10px;
+				width: 10px;
+				border: 2px solid @castanho;
+				border-radius: 10px;
+				padding: 5px;
+				display: inline-block;
+				background-color: rgba(255, 255, 255, 0.5);
+				text-indent: -9999px;
+			    &:first-child{
+					background-color: rgba(255, 255, 255, 1);
+				}
+			}
+		}
+	}
+
+	.med-panel{
+		width: 100%;
+		margin: 0 auto;
+		float: left;
+	}
+
+	.container{
+		position: relative;
+		width: calc(90%);
+		margin: 10px auto;
+	}
+
+	.page-title{
+		font-weight: bold;
+		padding: 5px;
+		font-family: 'Foglihten';
+		font-size: 30px;
+		color: darken(@castanho, 10%);
+	}
+
+	.button-div{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border-radius: 5px;
+		border: 1px solid @castanho;
+		padding: 5px;
+		width: 30px;
+		box-shadow: inset 0 0 5px @castanho;
+		color: @castanho;
+	}
+
+	.button{
+		margin: 3px 0;
+		border-top: 2px solid @castanho;
+		border-bottom: 2px solid @castanho;
+		hr{
+			margin: 3px 0px;
+			color: @castanho;
+		}
+	}
+
+	#menu{
+		transition: all 0.3s;
+	}
+
+	.open-menu{
+		margin-top: 10px;
+		height: 175px;
+		column-count: 2;
+		text-align: center;
+		a{	
+			font-size: 15px;
+			font-weight: bold;
+			padding: 10px;
+			display:inline-block;
+			margin: 5px;
+			width: 90%;
+			border: 1px solid @castanho;
+			border-radius: 15px;
+			margin-top: 10px;
+			text-decoration: none;
+			color: @castanho;
+			transition: all 0.3s;
+			box-shadow: inset 0 0 7px @castanho;
+		}
+	}
+
+	.menu {
+		height: 0px;
+		padding: 0px;
+		column-count: 2;
+		text-align: center;
+		a{
+			display: inline-block;
+			font-size: 0px;
+			padding: 0px;
+			height: 0px;
+			width: 0px;
+			border-bottom: 0px solid @castanho;
+			border-radius: 0px;
+			margin-top: 0px;
+			text-decoration: none;
+			color: white;
+			transition: all 0.3s, border 0.2s, font-size 0.2s;
+		}
+	}
+
+	.diarios {
+		margin: 10px 0;
+		text-align: center;
+		section	{
+			margin: 10px;
+			h2,
+			h3{
+				padding: 10px;
+				text-align: center;
+			}
+			figure{
+				max-width: 450px;
+				max-height: 300px;
+			}
+		}
+	}
+
+	.social {
+		display: inline-block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		li{
+			display: inline-block;
+			position: relative;
+			float: left;
+			border-radius: 10px;
+			margin: 7px;
+			a{
+				text-indent: -9999px;
+				display: block;
+				width: 32px;
+				height: 32px;
+				transition: all 0.3s;
+
+				&:hover{
+					box-shadow: 0px 0px 10px darken(@castanho, 10%);
+				}
+				&[href*="facebook.com"] {
+					background-image: url(../app.img/facebook.png);
+				}
+
+				&[href*="twitter.com"] {
+					background-image: url(../app.img/twitter.png);
+				}
+
+				&[href*="plus.google.com"] {
+					background-image: url(../app.img/googleplus.png);
+				}
+			}
+		}
+	}
+
+	.prato-dia{
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		left: -10px;
+		width: 100%
+	}
+
+	.contacts{
+		text-align: center;
+		h3{
+			padding-top:10px;
+		}
+		p{
+			text-align: center;
+			padding: 5px;
+			padding-bottom: 10px;
+		}
+	}
+
+	.tascaform{
+		width: 100%;
+		*{
+			box-sizing: border-box;
+			display: block;
+		}
+		section{
+			margin: 20px;
+		}
+
+		h2{
+			border-bottom: 1px solid @castanho;
+			border-radius: 20px;
+			padding: 10px;
+		}
+
+		select,
+		label,
+		textarea,
+		input{
+			font-size: 16px;
+			width: 100%;
+			margin: 0px;
+			margin-bottom: 15px;
+			padding: 10px;
+			border: 1px solid @castanho;
+			border-radius: 10px;
+			&:required:valid{
+				box-shadow: inset 0 0 7px green;
+			}
+			&:required:invalid{
+				box-shadow: inset 0 0 7px red;
+			}
+		}
+		select,
+		input[type='date'],
+		input[type='number']{
+			width: 75%;
+			max-width: 200px;
+		}
+
+		input[type='submit']{
+			width: 150px;
+			margin: 20px auto;
+			color: @castanho;
+			border: 3px solid @castanho;
+			font-size: 16px;
+			font-weight: bold;
+			background-color: #FFF;
+			box-shadow: inset 0 0 10px green;
+			&:disabled{
+				box-shadow: inset 0 0 10px red;
+			}
+		}
+
+		label{
+			min-width: 200px;
+			max-width: 300px;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: left;
+			width: 65%;
+			margin-bottom: 5px;
+			background-color: @castanho;
+			color: lighten(@castanho, 30%);
+		}
+
+		textarea{
+			height: 200px;
+			resize: none;
+		}
+
+		.comboboxheader{
+			margin-top: 30px;
+			margin-bottom: 0px;
+			label{
+				border-bottom-right-radius: 0px;
+				border-bottom-left-radius: 0px;
+				margin-bottom: 0px;
+			}
+		}
+
+		.comboboxsection{
+			overflow-y: auto;
+			height: 400px;
+			border-radius: 10px;
+			box-shadow: inset 0 0 3px @castanho;
+			padding: 0px 15px;
+			margin-top: 0px;
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+			label{
+				position:relative;
+				background-color: lighten(@castanho, 50%);
+				color: @castanho;
+				font-size: 18px;
+				min-width: 0%;
+				max-width: 100%;
+				position: relative;
+				border-radius: 15px;
+				width: 90%;
+				margin: 15px auto;
+				text-align: none;
+
+			}
+			input[type='checkbox']{
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 85%;			
+				width: 25px;
+				height: 25px;
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+	}
+
+	.statscontainer{		
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.8);
+		margin: 0px;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 11111;
+		text-align: center;
+		padding: 20px;
+		.stats{
+			margin: 0px;
+			position: relative;
+			top: 50%;
+			width: 100%;
+			transform: translateY(-50%);
+			border-top: 3px solid @castanho;
+			border-bottom: 3px solid @castanho;
+			border-radius: 20px;
+			*{
+				text-align: center;
+			}
+			p{
+				font-size: 17px;
+			}
+			img{
+				border-radius: 0px;
+				background-color: white;
+			}
+			input{
+				border-radius: 10px;
+				padding: 10px;
+				width: 150px;
+				margin: 20px auto;
+				color: @castanho;
+				border: 3px solid @castanho;
+				font-size: 16px;
+				font-weight: bold;
+				background-color: #FFF;
+				box-shadow: inset 0 0 10px @castanho;
+			}
+		}
+	}
+
+	.downtriangle{
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 20px solid lighten(@castanho, 25%);
+		margin: 5px auto;
+	}
+
+	.uptriangle{
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 20px solid lighten(@castanho, 25%);
+		margin: 5px auto;
+	}
+
+	.products{
+		margin: 25px auto;
+		h3{
+			text-align: center;
+		}
+		ul{
+			margin: 20px;
+			text-align: center;
+			&:first-child{
+				display: none;
+			}
+		}
+		li{
+			font-size: 12px;
+			padding: 5px;
+			&:after,
+			&:before{
+				color: lighten(@castanho, 25%);
+				padding: 3px;
+				padding-left: 5px;
+				content: '\2605';
+			}
+		}
+		input{
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: none;
+
+		}
+	}
+
+	.weeklycontainer{
+		.weeklyproducts{
+			box-sizing: border-box;
+			text-align: center;
+			.weekday{
+				font-size: 20px;
+				margin: 10px;
+				margin-top: 20px;
+				text-align: center;
+				background-color: @castanho;
+				color: white;
+				padding: 10px;
+				margin: 20px;
+				border-radius: 20px;
+			}
+			p{
+				text-align: center;
+				text-indent: none;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 420px){
+	footer .page-title{
+		font-size: 30px;
+	}
+
+	h3{
+		font-size: 23px;
+	}
+
+	figcaption,
+	p{
+		font-size: 15px;
+	}
+
+	.destaque ul{		
+		li{
+			font-size: 12px;
+		}
+	}
+}
+@media screen and (min-width: 550px){
+	.diarios {
+		margin: 0px;
+		padding: 0px;
+		display: inline-block;
+		width: 100%;
+		section{
+			display: relative;
+			width: 50%;
+			float: left;
+			margin: 0 auto;
+			padding-top: 60px;
+		}
+		.prato-dia{
+			position: absolute;
+			top: 0px;
+			padding-top: 0px;
+			width: 100%;
+			left: 0px;
+		}
+	}
+}
+
+@media screen and (min-width: 820px){
+
+	article{
+		overflow: hidden;
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+	aside{
+		width: 40%;
+		float: right;
+		img{
+			border-radius: 5px;
+		}
+	}
+
+	.home-panel{
+		width: 75%;
+	}
+	
+	.button-div{
+		display: none;
+	}
+
+	.open-menu,
+	.menu{
+		position: absolute;
+		top: 20px;
+		right: 5px;
+		padding: 5px;
+		text-align: center;
+		column-count: 1;
+		a{
+			font-weight: bold;
+			padding: 10px;
+			display: inline;
+			margin: 2px;
+			width: 100px;
+			height: 20px;
+			border: 1px solid @castanho;
+			border-radius: 15px;
+			margin-top: 10px;
+			text-decoration: none;
+			color: @castanho;
+			transition: all 0s, box-shadow 0.3s, background-color 0.3s;
+			font-size: 12px;
+			&:hover{
+				box-shadow: inset 0 0 2px grey;
+				background-color: darken(@castanho, 10%);
+				color: lighten(@castanho, 40%);
+			}
+		}
+	}
+
+	.med-panel{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 50%;
+		float: left;
+		padding: 0 5%;
+		*{
+			margin: auto;
+		}
+	}
+
+	.diarios {
+		display: inline-block;
+		section{
+			display: relative;
+			width: 25%;
+			float: left;
+			margin: 0px auto;
+			padding: 0px;
+			padding-top: 50px;
+		}
+		.prato-dia{
+			h2{
+				border: none;
+			}
+			position: absolute;
+			top: 5px;
+			padding-top: 0px;
+			width: 50%;
+			left: 25%;
+		}
+	}
+
+	.destaque{
+		padding: 20px 0;
+		section {
+			h2{
+				font-size: 25px;
+			}
+
+			ul li{
+				font-size: 18px;
+			}
+		}
+	}
+
+	.contacts{
+		section{
+			position: absolute;
+			width: 50%;
+			float: left;
+			top: 50%;
+			transform: translateY(-50%);
+			h2{
+				padding-bottom: 30px;
+			}
+		}
+		aside{
+			width: 50%;
+			position: relative;
+			iframe{
+				margin: 0 auto;
+			}
+		}
+
+	}
+
+	form{
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+	}
+
+	.tascaform{
+		margin: 0px;
+		section{
+			position: relative;
+			margin: 0px auto;
+			padding: 0px;
+			width: 80%;
+			*{
+				box-sizing: border-box;
+				margin: 10px;
+				display: inline-block;
+			}
+			label{
+				max-width: 100%;
+				border: 3px solid @castanho;
+				border-top-right-radius: 0px;
+				border-bottom-right-radius: 0px;
+				position: absolute;
+				width: 30%;
+				left: 0px;
+			}
+			select,
+			textarea,
+			input{
+				border-top-left-radius: 0px;
+				border-bottom-left-radius: 0px;
+				position: relative;
+				left: 30%;
+				width: 70%;
+			}
+			input[type='date'],
+			input[type='number'],
+			select{
+				padding: 9px;
+				max-width: 300px;
+			}
+			input[type='date']{
+				padding: 11.5px;
+			}
+			input[type='number']{
+				padding: 10px;
+			}
+			input[type='submit']{
+				float: none;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 10px;
+			}
+		}
+		.comboboxheader{
+			position: static;
+			label{
+				position: static;
+				margin-bottom: 0px;
+				border-top-right-radius: 10px;
+			}
+
+		}
+		.comboboxsection{
+			left: 10px;
+			column-count: 2;
+			height: inherit;
+			label{
+				max-width: 100%;
+				width: 100%;
+				border: 1px solid @castanho;
+				input{
+				}
+			}
+		}
+	}
+
+	.productsarticle{
+		height: 500px;
+		.products{
+			width: 50%;
+			margin: 30px 0px;
+			*{
+				margin: 10px;
+				margin-left: 25px;
+			}
+			.triangle{
+				margin: 0 auto;
+			}
+			h3{
+				text-align: center;
+			}
+			ul{
+				position: absolute;
+				width: 50%;
+				top: 75px;
+				right: 25px;
+				&:first-child{
+					display: none;
+				}
+				li{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.weeklyproducts{
+		display: inline-block;
+		width: 49%;
+	}
+}
+
+@media screen and (min-width: 1350px){
+	body{
+		max-width: 1650px;
+		margin: 0 auto;
+	}
+	.tascaform{
+		.comboboxsection{
+			column-count: 3;
+		}
+	}
+}
