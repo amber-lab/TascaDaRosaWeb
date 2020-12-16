@@ -1,10 +1,19 @@
-# TascaDaRosaWeb
-Website da empresa fictícia Tasca Da Rosa.
+# Tasca da Rosa
+Projeto criado no âmbito de melhoria de habilidades com tecnologias de desenvolvimento web.\
 
-Projeto criado com o objetivo de melhorar habilidades de PHP, HTML, CSS, Javascript.
-Funcionalidades:
-  Publicidade de produtos e serviços.
-  Contacto com empresa.
-  Criação de eventos de Catering ou takeaway de maneira simples.
-Funcionalidades em desenvolvimento:
-  Gestão de Eventos de Catering com @amber-lab/CateringWare
+## Estado
+Em desenvolvimento.
+
+## Funcionalidades
+- Publicidade de produtos e serviços
+- Ementa diária
+- Contacto por e-mail
+- Agendamento de eventos
+
+## Tecnologias
+- PHP 7
+	- PDO
+- HTML 5
+- CSS 3
+- Javascript
+	- JQuery
