@@ -1,6 +1,6 @@
 USE tasca;
-CREATE TABLE IF NOT EXISTS products(name varchar(50), type varchar(10), cost int(4), price int(4), uni varchar(1));
-INSERT INTO products(name, type, cost, price, uni) VALUES
+CREATE TABLE IF NOT EXISTS diarios(name varchar(50), type varchar(10), cost int(4), price int(4), uni varchar(1));
+INSERT INTO diarios(name, type, cost, price, uni) VALUES
 ('Caldo Verde', 'sopa', 2, 3, ''),
 ('Sopa de Grão', 'sopa', 2, 3, ''),
 ('Creme de Cenoura', 'sopa', 2, 3, ''),
