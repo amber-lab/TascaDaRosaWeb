@@ -9,21 +9,21 @@ Em desenvolvimento.
 
 ## Desafios
 - Uso mínimo de Frameworks e Templates
-- Melhoramento de Programação Orientada a Objetos
-
-## Futuras Melhorias
-- Ajuste grafico de Entradas de dados
-- Organização de elementos em página
-- Animações
-
-## Futuras funcionalidades
-- Envio de orçamento baseado em pedido de evento
+- Melhoria da Programação Orientada a Objetos
 
 ## Funcionalidades
 - Publicidade de produtos e serviços
 - Ementa diária
 - Contacto por e-mail
 - Agendamento de eventos
+
+## Futuras Melhorias
+- Ajuste gráfico de entradas de dados
+- Organização de elementos em página
+- Animações de transição
+
+## Futuras funcionalidades
+- Envio de orçamento baseado em pedido de evento
 
 ## Tecnologias
 - PHP 7
