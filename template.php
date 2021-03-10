@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tasca da Rosa</title>
 	<link rel="stylesheet" type="text/css" href="app.css/reset.css">
-	<link rel="stylesheet/less" type="text/less" href="app.css/estilos.less">
+	<link rel="stylesheet/less" type="text/less" href="app.css/estilos.css">
 </head>
 <body>
 	<header class="container">
