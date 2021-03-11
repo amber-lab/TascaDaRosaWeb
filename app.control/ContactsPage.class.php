@@ -136,9 +136,10 @@ class ContactsPage extends AdoPage{
 			    $mail->Host = 'smtp.gmail.com';
 			    $mail->Port = 587;
 			    $mail->isHTML(true);
-
-			    $mail->Username = 'amber.lab.net@gmail.com';
-			    $mail->Password = 'amberlabnet;)';
+			##################### DADOS #########################
+			    $mail->Username = '';
+			    $mail->Password = '';
+			#####################################################
 			    $mail->setFrom($email, 'Correio Automático');
 				$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 			    $mail->AddAddress($sender);
